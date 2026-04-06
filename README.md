@@ -26,16 +26,24 @@ and real-time data visualization.
 | Other | REST APIs, CRUD Operations, PDF Export, Git |
 
 ## 📁 Project Structure
-personal-finance-tracker/
-├── src/
-│   ├── components/    # Reusable React components
-│   ├── pages/         # Dashboard, Transactions
-│   └── App.js         # Main app file
-├── public/            # Static files
-├── server.js          # Backend entry point
-├── models/            # MongoDB schemas
-├── routes/            # API routes
-└── README.md
+
+**Frontend**
+```
+src/
+├── components/    # Reusable React components
+├── pages/         # Dashboard, Transactions pages
+└── App.js         # Main app entry point
+```
+
+**Backend**
+```
+├── config/        # Database configuration
+├── controllers/   # Business logic
+├── models/        # MongoDB schemas
+├── routes/        # API endpoints
+└── server.js      # Backend entry point
+```
+
 ## 🚀 How to Run Locally
 ```bash
 # Clone the repository
