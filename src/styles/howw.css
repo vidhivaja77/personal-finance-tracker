@@ -1,0 +1,108 @@
+/* PAGE */
+.how-page {
+  background: #efe6fe;
+}
+
+/* CONTAINER */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px; /* 🔥 kam gap */
+}
+
+.container.reverse {
+  flex-direction: row-reverse;
+}
+
+/* HERO */
+.how-hero {
+  padding: 40px 8%; /* 🔥 kam spacing */
+}
+
+/* TEXT LEFT */
+.hero-left {
+  max-width: 520px;
+}
+
+.hero-left h1 {
+  font-size: 64px; /* 🔥 bada */
+  color: #4b2e83;
+  margin-bottom: 8px;
+}
+
+.hero-left .sub {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #7a5fcf;
+}
+
+.hero-left h2 {
+  font-size: 34px;
+  margin-bottom: 6px;
+  color: #4b2e83;
+}
+
+.hero-left p {
+  font-size: 20px;
+  color: #5f4b8b;
+  line-height: 1.4;
+}
+
+/* HERO IMAGE */
+.hero-right img {
+  width: 380px;
+}
+
+/* SECTION */
+.how-section {
+  padding: 15px 8%; /* 🔥 very tight */
+}
+
+/* TEXT RIGHT */
+.section-right {
+  max-width: 500px;
+}
+
+.section-right h2 {
+  font-size: 36px; /* 🔥 bada */
+  margin-bottom: 6px;
+  color: #4b2e83;
+}
+
+.section-right p {
+  font-size: 20px;
+  color: #5f4b8b;
+  line-height: 1.4;
+}
+
+/* IMAGE */
+.section-left img {
+  width: 300px;
+}
+
+/* CTA */
+.how-cta {
+  text-align: center;
+  padding: 40px 10px; /* 🔥 tight */
+  background: #e2d6ff;
+}
+
+.how-cta h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #4b2e83;
+}
+
+.how-cta button {
+  padding: 14px 30px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(90deg, #8f6de0, #bb97f0);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+.container {
+  gap: 10px;
+}

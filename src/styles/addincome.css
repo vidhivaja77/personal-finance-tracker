@@ -1,0 +1,115 @@
+.add-income-wrapper{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width:100%;
+}
+
+/* TITLE */
+
+.page-title{
+  font-size:30px;
+  font-weight:700;
+  color:#4f3689;
+  margin-bottom:30px;
+}
+
+/* CARD */
+
+.income-card{
+  width:100%;
+  max-width:520px;
+
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(15px);
+
+  border-radius:22px;
+  padding:35px 40px;
+
+  box-shadow:0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* FORM */
+
+.income-card form{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.income-card label{
+  font-size:14px;
+  font-weight:600;
+  color:#5e438f;
+}
+
+.income-card input,
+.income-card select,
+.income-card textarea{
+  padding:12px 14px;
+  border-radius:12px;
+  border:1px solid #d8c7ef;
+  font-size:14px;
+  outline:none;
+  transition:0.2s;
+}
+
+/* ✨ INPUT FOCUS EFFECT */
+
+.income-card input:focus,
+.income-card select:focus,
+.income-card textarea:focus{
+  border-color:#8f6bd9;
+  box-shadow:0 0 0 2px rgba(143,107,217,0.15);
+}
+
+/* Placeholder Styling */
+.income-card input::placeholder,
+.income-card select::placeholder,
+.income-card textarea::placeholder {
+  color: #000 !important;
+  opacity: 1 !important;
+  font-weight: 400 !important;
+}
+
+/* Input text color */
+.income-card input,
+.income-card select,
+.income-card textarea {
+  color: #000 !important;
+}
+
+/* TEXTAREA */
+
+.income-card textarea{
+  resize:none;
+  height:70px;
+}
+
+/* BUTTON */
+
+.save-btn{
+  margin-top:10px;
+  padding:14px;
+  border:none;
+  border-radius:999px;
+
+  background:linear-gradient(90deg,#b390ef,#8f6bd9);
+  color:white;
+
+  font-weight:600;
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.save-btn:hover{
+  transform: translateY(-2px);
+  box-shadow:0 10px 20px rgba(143,107,217,0.3);
+}
+.form-error{
+color:#ff3b3b !important;
+font-size:13px;
+font-weight:500;
+margin-top:4px;
+}

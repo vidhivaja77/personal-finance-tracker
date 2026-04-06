@@ -1,0 +1,41 @@
+:root {
+  font-family: "Poppins", "Nunito", "Avenir Next", "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BODY */
+body {
+  min-width: 320px;
+  background: #efe6f7;
+  color: #5c438f;
+  overflow-x: hidden;
+}
+
+/* ROOT */
+#root {
+  min-height: 100vh;
+}
+
+/* MAIN APP WRAPPER */
+.app-shell {
+  width: 100%;              /* full width */
+  padding-top: 90px;        /* space for fixed navbar */
+}
+
+/* BUTTON */
+button {
+  font-family: inherit;
+  cursor: pointer;
+}

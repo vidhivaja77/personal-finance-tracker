@@ -1,0 +1,231 @@
+.dashboard-wrapper {
+  display: flex;
+  min-height: 100vh;
+  background: #f3edf8;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 260px;
+  height: 120vh;     /* 👈 height control yaha */
+  border-radius: 20px;
+  background: linear-gradient(180deg, #9f7aea, #6b46c1);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 40px 30px;
+}
+
+/* TOP SECTION */
+.sidebar-top {
+  display: flex;
+  flex-direction: column;
+}
+
+/* LOGO */
+.sidebar-logo {
+  font-size: 26px;
+  font-weight: 700;
+   margin-bottom: 45px;   /* 👈 yaha se gap control hoga */
+}
+
+/* MENU */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.sidebar-menu li a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+
+.sidebar-menu li a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ACTIVE ITEM */
+.sidebar-menu .active {
+  background: rgba(255, 255, 255, 0.15);  /* light transparent */
+  color: white;
+  font-weight: 700;
+  border-radius: 12px;
+}
+
+/* LOGOUT */
+.logout-btn {
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  background: white;
+  color: #6b46c1;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.logout-btn:hover {
+  background: #f3edf8;
+}
+
+/* ===== CONTENT ===== */
+.dashboard-content {
+  flex: 1;
+  padding: 50px 60px;
+}
+
+/* TITLE */
+.dashboard-title {
+  font-size: 32px;
+  color: #4f3689;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.card {
+  flex: 1;
+  padding: 30px;
+  border-radius: 18px;
+  color: white;
+}
+
+.income {
+  background: linear-gradient(135deg, #38a169, #48bb78);
+}
+
+.expense {
+  background: linear-gradient(135deg, #e53e3e, #f56565);
+}
+
+.balance {
+  background: linear-gradient(135deg, #3182ce, #4299e1);
+}
+
+.card h3 {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.card p {
+  font-size: 26px;
+  font-weight: 700;
+}
+/* CHART SECTION */
+
+.charts-wrapper{
+display:flex;
+gap:30px;
+margin-top:40px;
+flex-wrap:wrap;
+}
+
+.chart-box{
+flex:1;
+min-width:350px;
+
+background:white;
+padding:25px;
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.chart-title{
+text-align:center;
+color:#4f3689;
+margin-bottom:20px;
+}
+.charts{
+display:flex;
+gap:30px;
+margin-top:40px;
+flex-wrap:wrap;
+}
+
+.chart-box{
+
+flex:1;
+
+background:white;
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+.charts{
+display:flex;
+gap:30px;
+margin-top:40px;
+flex-wrap:wrap;
+}
+
+.chart-box{
+
+flex:1;
+
+background:white;
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+min-width:350px;
+
+}
+/* DASHBOARD CARD TEXT FIX */
+
+.card h3{
+color:white !important;
+opacity:0.9;
+}
+
+.card p{
+color:white !important;
+font-size:28px;
+font-weight:700;
+}
+.ai-card{
+  margin-top:40px;
+  padding:25px;
+  border-radius:18px;
+  background:linear-gradient(135deg,#efe7ff,#d9c7ff);
+  text-align:center;
+}
+
+.ai-btn{
+  padding:12px 20px;
+  border:none;
+  border-radius:999px;
+  background:#8f6bd9;
+  color:white;
+  cursor:pointer;
+}
+
+.ai-result{
+  margin-top:10px;
+  font-weight:600;
+  color:#4f3689;
+}

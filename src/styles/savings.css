@@ -1,0 +1,135 @@
+.goal-wrapper{
+display:flex;
+flex-direction:column;
+align-items:center;
+width:100%;
+gap:30px;
+}
+
+/* FORM CARD */
+
+.goal-card{
+width:100%;
+max-width:450px;
+
+background:white;
+border-radius:20px;
+padding:35px;
+
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
+
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.goal-card input{
+padding:13px 15px;
+border-radius:12px;
+border:1px solid #e1d6f5;
+outline:none;
+font-size:14px;
+}
+
+/* Placeholder Styling */
+.goal-card input::placeholder {
+  color: #000 !important;
+  opacity: 1 !important;
+  font-weight: 400 !important;
+}
+
+/* Input text color */
+.goal-card input {
+  color: #000 !important;
+}
+
+.goal-card input:focus{
+border-color:#8f6bd9;
+box-shadow:0 0 0 2px rgba(143,107,217,0.15);
+}
+
+.goal-card button{
+margin-top:10px;
+padding:14px;
+
+border:none;
+border-radius:999px;
+
+background:linear-gradient(90deg,#b390ef,#8f6bd9);
+color:white;
+
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+}
+
+.goal-card button:hover{
+transform:translateY(-2px);
+box-shadow:0 8px 20px rgba(143,107,217,0.3);
+}
+
+/* PROGRESS CARD */
+
+.goal-progress{
+width:100%;
+max-width:450px;
+
+background:white;
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
+
+text-align:center;
+}
+
+.goal-progress h3{
+margin-bottom:10px;
+color:#4f3689;
+}
+
+/* INFO ROW */
+
+.goal-info{
+display:flex;
+justify-content:center;
+gap:40px;
+margin-bottom:15px;
+}
+
+.goal-box{
+background:#f4effc;
+padding:12px 18px;
+border-radius:10px;
+font-size:14px;
+}
+
+/* PROGRESS BAR */
+
+.progress-bar{
+width:100%;
+height:18px;
+
+background:#eee;
+
+border-radius:12px;
+
+overflow:hidden;
+
+margin-top:10px;
+}
+
+.progress-fill{
+height:100%;
+
+background:linear-gradient(90deg,#b390ef,#8f6bd9);
+
+transition:0.4s;
+}
+
+.goal-progress p{
+margin-top:8px;
+font-size:14px;
+color:#6a5a92;
+}

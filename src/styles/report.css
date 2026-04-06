@@ -1,0 +1,164 @@
+/* PAGE WRAPPER */
+
+.report-wrapper{
+padding:28px 30px;
+}
+
+
+/* HEADER */
+
+.report-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:25px;
+}
+
+
+/* SUMMARY CARDS */
+
+.report-cards{
+display:flex;
+gap:16px;
+margin-bottom:25px;
+}
+
+.report-card{
+flex:1;
+background:white;
+padding:16px 18px;
+border-radius:14px;
+box-shadow:0 8px 20px rgba(0,0,0,0.06);
+transition:0.2s;
+}
+
+.report-card:hover{
+transform:translateY(-3px);
+}
+
+.report-card h3{
+font-size:14px;
+color:#6b6b6b;
+margin-bottom:6px;
+}
+
+.report-card p{
+font-size:22px;
+font-weight:700;
+color:#4f3689;
+}
+
+
+/* CARD COLORS */
+
+.income-card p{
+color:#2f855a;
+}
+
+.expense-card p{
+color:#e53e3e;
+}
+
+.balance-card p{
+color:#3182ce;
+}
+
+
+/* TABLE SECTION */
+
+.report-table{
+background:white;
+padding:18px;
+border-radius:14px;
+box-shadow:0 8px 20px rgba(0,0,0,0.06);
+margin-bottom:25px;
+}
+
+.report-table h3{
+font-size:16px;
+margin-bottom:10px;
+color:#4f3689;
+}
+
+
+/* TABLE */
+
+.report-table table{
+width:100%;
+border-collapse:collapse;
+font-size:14px;
+}
+
+.report-table th{
+padding:9px;
+font-weight:600;
+color:#4f3689;
+}
+
+.report-table td{
+padding:8px;
+text-align:center;
+border-bottom:1px solid #eee;
+font-weight:600;
+}
+
+
+/* INCOME EXPENSE COLORS */
+
+.income-cell{
+background:#43a047;
+color:white;
+border-radius:6px;
+}
+
+.expense-cell{
+background:#ef5350;
+color:white;
+border-radius:6px;
+}
+
+.balance-cell{
+color:#4f3689;
+font-weight:700;
+}
+
+
+/* INSIGHT CARD */
+
+.report-insight{
+background:white;
+padding:18px;
+border-radius:14px;
+box-shadow:0 8px 20px rgba(0,0,0,0.06);
+}
+
+.report-insight h3{
+font-size:16px;
+margin-bottom:6px;
+color:#4f3689;
+}
+
+.report-insight p{
+font-size:14px;
+color:#555;
+}
+
+
+/* DOWNLOAD BUTTON */
+
+.download-btn{
+background:linear-gradient(90deg,#8f6bd9,#b390ef);
+border:none;
+padding:10px 20px;
+color:white;
+font-weight:600;
+border-radius:30px;
+cursor:pointer;
+font-size:14px;
+transition:0.3s;
+}
+
+.download-btn:hover{
+transform:translateY(-2px);
+box-shadow:0 8px 18px rgba(143,107,217,0.35);
+}

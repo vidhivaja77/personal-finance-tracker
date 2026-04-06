@@ -1,0 +1,85 @@
+.hero {
+  width: 100%;
+  min-height: 550px;
+
+  background-image: url("../assets/background.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  padding: 80px 20px 130px;
+}
+
+.hero-content {
+  max-width: 920px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(42px, 5.4vw, 84px);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: #5a3f90;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: clamp(18px, 1.6vw, 24px);
+  line-height: 1.4;
+  color: #6b4e9c;
+  margin-bottom: 32px;
+}
+
+/* ✅ BUTTON FIX */
+.cta-btn {
+  padding: 18px 48px;
+  border-radius: 999px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #8f6de0, #bb97f0);
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(129, 95, 193, 0.25);
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(129, 95, 193, 0.35);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .hero {
+    min-height: 640px;
+    background-size: 150%;
+    background-position: center bottom;
+    padding-top: 52px;
+  }
+}
+
+@media (max-width: 680px) {
+  .hero {
+    min-height: 520px;
+    background-size: 190%;
+    padding: 36px 16px;
+  }
+
+  .subtitle {
+    margin-bottom: 24px;
+  }
+
+  .cta-btn {
+    width: 100%;
+    max-width: 300px;
+    padding: 14px 20px;
+  }
+}

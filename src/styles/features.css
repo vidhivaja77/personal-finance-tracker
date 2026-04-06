@@ -1,0 +1,78 @@
+.features {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.features h2 {
+  font-size: 36px;
+  color: #5b3e91;
+  margin-bottom: 10px;
+}
+
+.features-sub {
+  color: #6c56a5;
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+
+/* GRID */
+.features-grid,
+.extra-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* 🔥 CLEAN CARD (NO BOX) */
+.feature-card {
+  background: transparent;
+  padding: 10px;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+}
+
+/* IMAGE */
+.feature-card img {
+  width: 200px;   /* 🔥 increase size */
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* TEXT */
+.feature-card h3 {
+  color: #5b3e91;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.feature-card p {
+  color: #6c56a5;
+  font-size: 14px;
+}
+
+/* BUTTON */
+.explore-btn {
+  margin-top: 50px;
+  padding: 14px 36px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(90deg, #8f6bd9, #b390ef);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.explore-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(143,107,217,0.3);
+}

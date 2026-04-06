@@ -1,0 +1,244 @@
+/* =========================
+   AUTH WRAPPER
+========================= */
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 120px 20px 80px; /* navbar space */
+
+  background-image: url("../assets/auth-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* Soft Premium Overlay */
+.auth-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(6px);
+  z-index: 0;
+}
+
+/* =========================
+   CARD
+========================= */
+.auth-card {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  max-width: 440px;
+
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(24px);
+
+  border-radius: 32px;
+  padding: 50px 44px;
+
+  box-shadow:
+    0 30px 60px rgba(111, 66, 193, 0.15),
+    0 8px 20px rgba(0, 0, 0, 0.05);
+
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.auth-card:hover {
+  transform: translateY(-6px);
+}
+
+/* =========================
+   TITLES
+========================= */
+.auth-card h2 {
+  font-size: 34px;
+  margin-bottom: 10px;
+  color: #5b3e91;
+  letter-spacing: -0.5px;
+}
+
+.auth-subtitle {
+  margin-bottom: 32px;
+  font-size: 15px;
+  color: #6c56a5;
+}
+
+/* =========================
+   FORM
+========================= */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.auth-form label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6c56a5;
+}
+
+/* =========================
+   INPUT GROUP (For Icons)
+========================= */
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 16px 14px 44px;
+  border-radius: 16px;
+  border: 1px solid #d6c6ee;
+  background: rgba(255, 255, 255, 0.95);
+  outline: none;
+  font-size: 14px;
+  transition: all 0.25s ease;
+}
+
+.input-group input:focus {
+  border-color: #8f6bd9;
+  box-shadow: 0 0 0 4px rgba(143, 107, 217, 0.12);
+}
+
+/* Placeholder Styling */
+.input-group input::placeholder {
+  color: #000 !important;
+  opacity: 1 !important;
+  font-weight: 400 !important;
+}
+
+/* Input text color */
+.input-group input {
+  color: #000 !important;
+}
+
+/* Left Icon */
+.input-icon {
+  position: absolute;
+  left: 16px;
+  color: #8f6bd9;
+}
+
+/* Password Toggle */
+.toggle-password {
+  position: absolute;
+  right: 16px;
+  cursor: pointer;
+  color: #8f6bd9;
+  transition: 0.2s ease;
+}
+
+.toggle-password:hover {
+  opacity: 0.7;
+}
+
+/* =========================
+   PASSWORD HEADER
+========================= */
+.password-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.forgot-link {
+  font-size: 13px;
+  text-decoration: none;
+  color: #8f6bd9;
+  transition: 0.2s ease;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.auth-btn {
+  margin-top: 10px;
+  padding: 16px;
+  border-radius: 999px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(90deg, #b390ef, #8f6bd9);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(143, 107, 217, 0.3);
+}
+
+.auth-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(143, 107, 217, 0.4);
+}
+
+.auth-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* =========================
+   SWITCH TEXT
+========================= */
+.auth-switch {
+  margin-top: 28px;
+  font-size: 14px;
+  color: #6c56a5;
+  text-align: center;
+}
+
+.auth-switch a {
+  color: #8f6bd9;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-switch a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   MESSAGES
+========================= */
+.error {
+  color: #e74c3c;
+  font-size: 13px;
+  margin-top: -8px;
+}
+
+.info {
+  color: #28a745;
+  font-size: 13px;
+  margin-top: -8px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 38px 28px;
+    border-radius: 26px;
+  }
+
+  .auth-card h2 {
+    font-size: 28px;
+  }
+}
